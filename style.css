@@ -55,4 +55,114 @@ Custom styles
 
 body {
     background: rgb(236,238,241);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.page {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+
+}
+
+header, section, footer {
+    flex: 1;
+}
+
+/* 
+===============================================
+Links
+===============================================
+ */
+
+a {
+    text-decoration: none;
+    color: rgb(0,119,197);
+    font-size: .9em;
+}
+
+/* 
+================================================
+Buttons
+=================================================
+*/
+
+button {
+    background: rgb(0,119,197);
+    border: 1px solid gray;
+    border-radius: 2px;
+    color: white;
+    font-size: 1em;
+    padding: 10px 15px;
+}
+
+#form button {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+/* 
+==================================================
+Form
+==================================================
+*/
+
+#form {
+    background: rgb(255,255,255);
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+#form h1 {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+#form p {
+    font-weight: 300;
+    font-size: .9em;
+}
+
+label, 
+input {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+input {
+    font-size: 1.25em;
+    padding: 2px;
+}
+
+
+
+
+/* 
+===================================================
+Footer
+===================================================
+*/
+
+footer {
+    font-size: .75em;
+    text-align: center;
+    line-height: 20px;
+}
+
+li {
+    display: inline-block;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+li:hover {
+    text-decoration: underline;
 }
