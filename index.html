@@ -38,24 +38,34 @@
         <p>One account for everything Intuit, including Mint.</p>
         <a href="">Learn more</a>
         <form>
-          <label
-            >Email address
-            <input type="email" name="email" required />
-          </label>
+          <label>Email address</label>
+          <input type="email" id="email" required />
+          
 
           <label>Phone (recommended)<input type="tel" name="phone"/></label>
           <label
-            >Password<input type="password" name="password" required min="8"
+            >Password<input type="password" id="password" required
           /></label>
+          <div class="active hidden">
+            <ul>
+                <li>Use 8 or more characters</li>
+                <li>Use upper and lower case letters(e.g. Aa)</li>
+                <li>Use a number (e.g. 1234)</li>
+                <li>Use a symbole (e.g. !A#$)</li>
+            </ul>
+            <label
+            >Confirm Password<input type="password" name="confirm-password" required
+          /></label>
+          </div>
           <button>Create Account</button>
         </form>
         <p>
           By clicking Create account, you agree to our <a href="">Terms</a> and
           have read and acknowledge our <a href="">Privacy Statement.</a>
         </p>
-        <div>
+        <div id="reCAPTCHA">
           <p>
-            Invisible reCAPTCHA by Google <a href="">Privacy Policy</a>and
+            Invisible reCAPTCHA by Google <a href="">Privacy Policy</a> and
             <a href="">Terms of Use</a>.
           </p>
         </div>
@@ -80,4 +90,16 @@
       </footer>
     </div>
   </body>
+
+  <script>
+      let passInput = document.getElementById('password')
+      console.log(passInput)
+       
+       passInput.addEventListener('focus', logValue)
+
+       function logValue(e) {
+           const hidden = document.querySelector('.active')
+           hidden.classList.remove('hidden')
+       }
+  </script>
 </html>
