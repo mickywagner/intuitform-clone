@@ -37,25 +37,42 @@
         <h1>Create an Intuit account</h1>
         <p>One account for everything Intuit, including Mint.</p>
         <a href="">Learn more</a>
-        <form>
-          <label>Email address</label>
+        <form novalidate>
+          <label for="email">Email address</label>
           <input type="email" id="email" required />
           
 
-          <label>Phone (recommended)<input type="tel" name="phone"/></label>
-          <label
-            >Password<input type="password" id="password" required
-          /></label>
+          <label for="phone">Phone (recommended)</label>
+          <input 
+            type="tel" 
+            id="phone"
+            pattern="^(\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"
+          />
+          
+          <label for="password">Password</label>
+          <input 
+            type="password" 
+            id="password"
+            minlength="8"
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+            required
+          />
+
           <div class="active hidden">
             <ul>
                 <li>Use 8 or more characters</li>
                 <li>Use upper and lower case letters(e.g. Aa)</li>
                 <li>Use a number (e.g. 1234)</li>
-                <li>Use a symbole (e.g. !A#$)</li>
+                <li>Use a symbol (e.g. !A#$)</li>
             </ul>
-            <label
-            >Confirm Password<input type="password" name="confirm-password" required
-          /></label>
+            
+          <label for="confirmpassword">Confirm Password</label>
+          <input 
+            type="password" 
+            id="confirmpassword" 
+            required
+          />
+
           </div>
           <button>Create Account</button>
         </form>

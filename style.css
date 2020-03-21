@@ -183,13 +183,14 @@ input{
     height: 1.5rem;
     border: 1px solid lightgray;
     border-radius: 3px;
-    margin-bottom: 1rem;
     font-size: 1rem;
     padding: 4px;
 }
 
 label {
     font-size: .7rem;
+    display: block;
+    margin-top: 1.5rem;
 }
 
 .form h1 {
@@ -212,24 +213,18 @@ input:focus {
 }
 
 
-
-
 section.form p:nth-child(5) {
     font-style: italic;
     color: gray;
     margin: 0 auto;
     width: 80%; 
-    margin-bottom: 70px; 
+    margin-bottom: 30px;
 }
 
 #reCAPTCHA {
     background:rgb(236,238,241);
     padding: 10px;
 }
-
-
-
-
 
 
 /* 
@@ -263,9 +258,10 @@ header button {
 
 .active ul {
     text-align: left;
-    padding-left: 25px;
+    padding-left: 10px;
     font-size: .6em;
     color: red;
+    margin-bottom: 10px;
 }
 
 .active ul li {
@@ -311,12 +307,8 @@ li:hover {
 
 
 
+/* Validation styles */
 
-validation styles
-
-
-
-
-
-
-
+/* input:invalid {
+    border: 1px solid red;
+} */
