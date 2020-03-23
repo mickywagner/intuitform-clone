@@ -38,8 +38,11 @@
         <p>One account for everything Intuit, including Mint.</p>
         <a href="">Learn more</a>
         <form novalidate>
-          <label for="email">Email address</label>
-          <input type="email" id="email" required />
+          <div class="email">
+            <label for="email">Email address</label><span></span>
+            <input type="email" id="email" required > 
+          </div>
+          
 
           <label for="phone">Phone (recommended)</label>
           <input
@@ -47,6 +50,7 @@
             id="phone"
             pattern="^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$"
           />
+         
 
           <label for="password">Password</label>
           <input
@@ -58,13 +62,6 @@
           />
 
           <div class="active hidden">
-            <ul>
-              <li>Use 8 or more characters</li>
-              <li>Use upper and lower case letters(e.g. Aa)</li>
-              <li>Use a number (e.g. 1234)</li>
-              <li>Use a symbol (e.g. !A#$)</li>
-            </ul>
-
             <label for="confirmpassword">Confirm Password</label>
             <input type="password" id="confirmpassword" required />
           </div>

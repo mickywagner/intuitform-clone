@@ -176,7 +176,7 @@ label, input {
 
 .form form {
     text-align: left;
-    padding: 25px;
+    padding: 0 25px;
 }
 
 input{
@@ -185,6 +185,7 @@ input{
     border-radius: 3px;
     font-size: 1rem;
     padding: 4px;
+    position: relative;
 }
 
 label {
@@ -312,9 +313,6 @@ li:hover {
     border: 1px solid red;
 }
 
-.error:optional {
-    border: 1px solid orange;
-}
 .error-message {
     color: red;
     margin-top: 2px;
@@ -323,9 +321,17 @@ li:hover {
     line-height: 1rem;
 }
 
-.error-message#error-for-phone {
-    color: orange;
+
+
+/* Hint bubbles */
+
+input[id="email"]:focus + span:after {
+    content: "You'll use this as your user ID";
+    width: 130px;
+    padding:5px;
+    border-radius: 5px;
+    font-size: 0.5rem;
+    background: rgb(48, 48, 48);
+    color: white;
 }
-
-
 
