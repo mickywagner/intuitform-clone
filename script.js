@@ -61,7 +61,7 @@ function hasError(field) {
       let confirmPassword = document.querySelector("#confirmpassword");
       confirmPassword.setAttribute("pattern", password);
 
-      return "List of conditions";
+      return "Password must be 8 or more characters, contain an upper and lower case letter, at least 1 number, and 1 symbol.";
     }
 
     if (field.id === "confirmpassword") {
@@ -69,6 +69,7 @@ function hasError(field) {
     }
 
     if (field.id === "phone") {
+      phoneMsg.innerHTML = ''
       return "Please enter a valid phone number.";
     }
 
@@ -76,11 +77,4 @@ function hasError(field) {
   }
 }
 
-//   <template>
-//             <ul>
-//               <li>Use 8 or more characters</li>
-//               <li>Use upper and lower case letters(e.g. Aa)</li>
-//               <li>Use a number (e.g. 1234)</li>
-//               <li>Use a symbol (e.g. !A#$)</li>
-//             </ul>
-//           </template>
+const phoneMsg = document.querySelector('.phoneMsg')

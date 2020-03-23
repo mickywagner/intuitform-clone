@@ -321,6 +321,10 @@ li:hover {
     line-height: 1rem;
 }
 
+.phoneMsg {
+    font-size: 0.6rem;
+}
+
 
 
 /* Hint bubbles */
