@@ -268,6 +268,7 @@ header button {
     padding: 0;
     display: block;
     line-height: 0;
+    text-decoration: none;
 }
 
 .active ul li:before {
@@ -305,10 +306,31 @@ li:hover {
     }
 }
 
-
-
 /* Validation styles */
 
-/* input:invalid {
+.error {
     border: 1px solid red;
-} */
+}
+
+.error-message {
+    color: red;
+    font-size: .6rem;
+    position: relative;
+}
+
+.error-message::after {
+    content: 'X';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: -110%;
+    left: 93%;
+
+}
+
+
