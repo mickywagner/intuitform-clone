@@ -36,7 +36,7 @@ document.addEventListener(
   }
 
   function removeError(field) {
-    field.classList.remove('error')
+   
 
   }
 
@@ -60,6 +60,10 @@ document.addEventListener(
 
       if (field.id === "confirmpassword") {
         return 'Password does not match'
+      }
+
+      if(field.id === "phone") {
+          return 'We strongly recommend adding a phone number. This will verify your account and keep it safe.'
       }
 
       return "Please use the requested format";

@@ -312,25 +312,20 @@ li:hover {
     border: 1px solid red;
 }
 
+.error:optional {
+    border: 1px solid orange;
+}
 .error-message {
     color: red;
+    margin-top: 2px;
     font-size: .6rem;
     position: relative;
+    line-height: 1rem;
 }
 
-.error-message::after {
-    content: 'X';
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid red;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    position: absolute;
-    top: -110%;
-    left: 93%;
-
+.error-message#error-for-phone {
+    color: orange;
 }
+
 
 
