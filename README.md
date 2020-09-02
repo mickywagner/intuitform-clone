@@ -16,6 +16,7 @@ the focus was making as close a copy as possible to the real Intuit form, I also
 <ul>
   <li>HTML 5</li>
   <li>CSS 3</li>
+  <li>Javascript - Constraint Validation API</li>
 </ul>
 </strong>
 
